@@ -1,33 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Service</title>
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=call" />
+
     <!-- daisy -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- custom css -->
-     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav class="px-10 py-5 flex justify-between">
-        <div class="flex items-center gap-3">
-            <img src="assets/logo.png" class="h-[60px]">
-            <p class="text-[#006747] font-bold">Emergency <br>Service</p>
+      <div class="flex items-center gap-3">
+        <img src="assets/logo.png" class="h-[60px]" />
+        <p class="text-[#006747] font-bold">Emergency <br />Service</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <div
+          class="heart flex items-center justify-center gap-2 bg-[#ecfff0] font-bold px-4 py-2 rounded-full w-25"
+        >
+          0 <img src="assets/heart.png" class="h-7" />
         </div>
-        <div class="flex items-center gap-2">
-            <div class="heart flex items-center justify-center gap-2 bg-[#ecfff0] font-bold px-4 py-2 rounded-full w-25">0 <img src="assets/heart.png" class="h-7"></div>
-            <div class="heart flex items-center justify-center gap-2 bg-[#ecfff0] font-bold px-4 py-2 rounded-full w-25">100 <img src="assets/coin.png" class="h-7"></div>
-            <button class="bg-[#00A63E] font-bold px-4 py-2 rounded-full w-30 h-11 text-white" > <span>0</span> Copy</button>
+        <div
+          class="heart flex items-center justify-center gap-2 bg-[#ecfff0] font-bold px-4 py-2 rounded-full w-25"
+        >
+          100 <img src="assets/coin.png" class="h-7" />
         </div>
+        <button
+          class="bg-[#00A63E] font-bold px-4 py-2 rounded-full w-30 h-11 text-white"
+        >
+          <span>0</span> Copy
+        </button>
+      </div>
     </nav>
-    <header class="w-[100%] mx-auto text-center bg-[linear-gradient(to_right,#013223,#006747,#013223)] text-white py-4 text-bold">
-        <img src="assets/logo-dark.png" class="h-40 mx-auto">
-        <h1 class="text-[30px]">Emergency Service Directory</h1>
-        <p>Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+    <header
+      class="w-[100%] mx-auto text-center bg-[linear-gradient(to_right,#013223,#006747,#013223)] text-white py-4 text-bold"
+    >
+      <img src="assets/logo-dark.png" class="h-40 mx-auto" />
+      <h1 class="text-[30px]">Emergency Service Directory</h1>
+      <p>
+        Government Emergency Services at Your Fingertip – A Project by
+        Government of the People’s Republic of Bangladesh
+      </p>
     </header>
-</body>
+    <!-- main section -->
+    <main class="bg-[#f5fff6] h-[100%] w-[100%] flex justify-between p-3">
+      <!-- for cards -->
+      <article class="p-5 grid grid-cols-3 gap-3">
+        <div class="card bg-white rounded-3xl p-3 max-w-[300px]">
+          <div class="cardHead flex justify-between items-center">
+            <div
+              class="cardIcon bg-[#ffe3e2] w-15 h-15 rounded-2xl flex justify-center items-center"
+            >
+              <img src="assets/emergency.png" class="h-9" />
+            </div>
+            <img src="assets/favorite.png" class="h-6" />
+          </div>
+          <div class="cBody">
+            <h3 class="cardT font-bold text-[20px]">
+              National Emergency Number
+            </h3>
+            <p>National Emergency</p>
+            <h2 class="font-bold mt-3 text-[18px]">999</h2>
+            <p
+              class="catagory p-2 bg-slate-300 max-w-[100px] text-center rounded-full"
+            >
+              All
+            </p>
+          </div>
+          <div class="cButtonv w-[100%]">
+            <button class="btn w-[45%] mt-2 mx-1 bg-white"><img src="assets/file_copy.png" alt=""> Copy</button>
+            <button class="btn w-[45%] mt-2 mx-1 bg-[#00a63e] text-white"><span class="material-symbols-outlined">call</span> Call</button>
+          </div>
+        </div>
+        <div class="card bg-white rounded-3xl p-3 max-w-[300px]">
+          <div class="cardHead flex justify-between items-center">
+            <div
+              class="cardIcon bg-[#ffe3e2] w-15 h-15 rounded-2xl flex justify-center items-center"
+            >
+              <img src="assets/emergency.png" class="h-9" />
+            </div>
+            <img src="assets/favorite.png" class="h-6" />
+          </div>
+          <div class="cBody">
+            <h3 class="cardT font-bold text-[20px]">
+              National Emergency Number
+            </h3>
+            <p>National Emergency</p>
+            <h2 class="font-bold mt-3 text-[18px]">999</h2>
+            <p
+              class="catagory p-2 bg-slate-300 max-w-[100px] text-center rounded-full"
+            >
+              All
+            </p>
+          </div>
+          <div class="cButtonv w-[100%]">
+            <button class="btn w-[45%] mt-2 mx-1 bg-white"><img src="assets/file_copy.png" alt=""> Copy</button>
+            <button class="btn w-[45%] mt-2 mx-1 bg-[#00a63e] text-white"><span class="material-symbols-outlined">call</span> Call</button>
+          </div>
+        </div>
+        <div class="card bg-white rounded-3xl p-3 max-w-[300px]">
+          <div class="cardHead flex justify-between items-center">
+            <div
+              class="cardIcon bg-[#ffe3e2] w-15 h-15 rounded-2xl flex justify-center items-center"
+            >
+              <img src="assets/emergency.png" class="h-9" />
+            </div>
+            <img src="assets/favorite.png" class="h-6" />
+          </div>
+          <div class="cBody">
+            <h3 class="cardT font-bold text-[20px]">
+              National Emergency Number
+            </h3>
+            <p>National Emergency</p>
+            <h2 class="font-bold mt-3 text-[18px]">999</h2>
+            <p
+              class="catagory p-2 bg-slate-300 max-w-[100px] text-center rounded-full"
+            >
+              All
+            </p>
+          </div>
+          <div class="cButtonv w-[100%]">
+            <button class="btn w-[45%] mt-2 mx-1 bg-white"><img src="assets/file_copy.png" alt=""> Copy</button>
+            <button class="btn w-[45%] mt-2 mx-1 bg-[#00a63e] text-white"><span class="material-symbols-outlined">call</span> Call</button>
+          </div>
+        </div>
+      </article>
+      <!-- history -->
+      <aside>
+        <div class="cHistoryHead">
+          <div>
+            <img src="assets/history.png" alt="">
+            <h3>history</h3>
+          </div>
+          <button class="btn">Clear</button>
+        </div>
+      </aside>
+    </main>
+  </body>
 </html>
