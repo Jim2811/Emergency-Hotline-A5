@@ -1,3 +1,5 @@
+// global variables
+let aside = document.querySelector('#CallHistory')
 // Heart Functionality
 let cardHeart = document.querySelectorAll('.cardHeart');
 let favSpan = document.getElementById('favCount')
@@ -25,7 +27,7 @@ callBtn.forEach(function(btn){
             let serviceName = card.querySelector('.cardT').innerText;
             let serviceNum = card.querySelector('.serviceNum').innerText;
             // call history functionality 
-            let aside = document.querySelector('#CallHistory')
+            
             // call histories 
             const time = new Date().toLocaleTimeString([], {
             hour: '2-digit',
@@ -50,8 +52,13 @@ callBtn.forEach(function(btn){
         }
         else{
             coinCount.innerText = 0
-            alert("Not Enough Coin to make call")
+            alert("❌ Not Enough Coin to make call")
         }
         
     })
 })
+// clear button functionality 
+let clear = document.querySelector('.clearBtn');
+clear.addEventListener('click', function(){
+    aside.innerHTML = ''
+});
