@@ -5,4 +5,24 @@
         align-items: center;
         gap: 10px;
     }
+    article{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        height: auto;
+    }
+    .cButtonv button{
+        width: 100%;
+    }
+    .cButtonv :first-child{
+        background-color: white;
+    }
+    .cButtonv :nth-child(2){
+        background-color: #00a63e; 
+        color: white;
+    }
+    .cButtonv :nth-child(2) span{
+        background: transparent;
+    }
+
 }
