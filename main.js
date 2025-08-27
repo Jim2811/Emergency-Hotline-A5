@@ -11,14 +11,24 @@ cardHeart.forEach(function(heart){
 });
 // Call Button Functionality
 let coins = 100;
+let coinCount = document.getElementById('coinCount')
 let callBtn = document.querySelectorAll('.call-btn')
+console.log(coinCount);
 
 callBtn.forEach(function(btn){
     btn.addEventListener('click', function(){
-        let card = btn.parentElement.parentElement.querySelector('.cBody');
-        let serviceName = card.querySelector('.cardT').innerText;
-        let serviceNum = card.querySelector('.serviceNum').innerText;
-        
-        alert(`📞 Calling ${serviceName} at ${serviceNum}...`)
+        coins -= 20;
+        coinCount.innerText = coins
+        if (coins >= 20){
+            let card = btn.parentElement.parentElement.querySelector('.cBody');
+            let serviceName = card.querySelector('.cardT').innerText;
+            let serviceNum = card.querySelector('.serviceNum').innerText;
+            
+            alert(`📞 Calling ${serviceName} at ${serviceNum}...`)
+        }
+        else{
+            coinCount.innerText = 0
+            alert("Not Enough Coin to make call")
+        }
     })
 })
