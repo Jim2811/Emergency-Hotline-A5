@@ -9,3 +9,16 @@ cardHeart.forEach(function(heart){
         favSpan.innerText = favCount
     })
 });
+// Call Button Functionality
+let coins = 100;
+let callBtn = document.querySelectorAll('.call-btn')
+
+callBtn.forEach(function(btn){
+    btn.addEventListener('click', function(){
+        let card = btn.parentElement.parentElement.querySelector('.cBody');
+        let serviceName = card.querySelector('.cardT').innerText;
+        let serviceNum = card.querySelector('.serviceNum').innerText;
+        
+        alert(`📞 Calling ${serviceName} at ${serviceNum}...`)
+    })
+})
