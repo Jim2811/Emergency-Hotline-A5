@@ -5,6 +5,16 @@
         align-items: center;
         gap: 10px;
     }
+    .navBoxes{
+        font-size: 14px;
+    }
+    header{
+        padding: 7px 5px;
+    }
+    main{
+        flex-direction: column;
+        justify-content: center;
+    }
     article{
         grid-template-columns: 1fr;
     }
@@ -24,5 +34,13 @@
     .cButtonv :nth-child(2) span{
         background: transparent;
     }
-
+    aside{
+        width: 320px;
+    }
+    .clearBtn{
+        background-color: #00a63e;
+        border-radius: 100px;
+        color: white;
+        font-size: bold;
+    }
 }
