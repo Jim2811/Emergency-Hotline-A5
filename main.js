@@ -1,5 +1,6 @@
 // global variables
 let aside = document.querySelector('#CallHistory')
+
 // Heart Functionality
 let cardHeart = document.querySelectorAll('.cardHeart');
 let favSpan = document.getElementById('favCount')
@@ -62,3 +63,17 @@ let clear = document.querySelector('.clearBtn');
 clear.addEventListener('click', function(){
     aside.innerHTML = ''
 });
+// Copy Functionality 
+let copyBtn = document.querySelectorAll('.copyBtn')
+let copies = 0;
+
+let totalCopies = document.querySelector('#totalCopies')
+copyBtn.forEach(function(e){
+    let copyItem = e.parentElement.parentElement.querySelector('.serviceNum').innerText
+    e.addEventListener('click', function(){
+        copies ++;
+        totalCopies.innerText = copies
+        navigator.clipboard.writeText(copyItem)
+        alert(`Number has been Copied: ${copyItem}`)
+    })
+})
